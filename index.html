@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VTube</title>
+    <title>🎞️ MovieBuzzz</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,21 +22,21 @@
   <body style="background-color: black;">
     <!-- navbar -->
     <header>
-      <nav class="navbar bg-body-tertiary p-0">
-        <div class="container-fluid text-bg-dark p-2">
-          <h3>VTube</h3>
-          <form>
-            <input class="outline-none" type="text" placeholder="Search" />
-            <button class="btn text-light bg-secondary ms-3 rounded-pill">Search</button>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid text-bg-dark p-4">
+          <h3>MovieBuzzz 🎞️</h3>
+          <form class="d-flex" role="search">
+            <input class="form-control outline-none" type="search" placeholder="Search" />
+            <button class="btn text-light bg-secondary ms-3 rounded-pill" type="submit" >Search</button>
           </form>
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link text-light" href="#" aria-current="page"
+              <a class="nav-link text-light" id="home" href="#home" aria-current="page"
                 ><i class="fa-solid fa-house"></i> Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#"
+              <a class="nav-link text-light" href="#mylist"
                 ><i class="fa-solid fa-plus"></i> Watchlist</a
               >
             </li>
@@ -48,12 +48,11 @@
                 role="button"
                 aria-expanded="false"
                 href="#"
-                ><i class="fa-solid fa-list"></i> Categories</a
+                ><i class="fa-solid fa-list"></i> Genre</a
               >
               <ul class="dropdown-menu bg-dark">
-                <li><a class="dropdowm-item text-light bg-dark px-3" href="#">Movies</a></li>
-                <li><a class="dropdowm-item text-light bg-dark px-3" href="#">Series</a></li>
-                <li><a class="dropdowm-item text-light bg-dark px-3" href="#">TV Shows</a></li>
+                <li><a class="dropdowm-item text-light bg-dark px-3 text-decoration-none" href="#love">Love</a></li>
+                <li><a class="dropdowm-item text-light bg-dark px-3 text-decoration-none" href="#action">Action</a></li>
               </ul>
             </li>
           </ul>
@@ -158,18 +157,24 @@
     </div>
     <!-- card -->
     <div class="container">
-    <div class="Continue Watching mt-5">
+    <div class="mylist mt-5" id="mylist">
         <h2 class="text-light">Continue Watching for Shree</h2>
     <div class="row">
         <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNAK1GlZUUzTn_E5ff3YPYiBzfdRfZIp6stg&usqp=CAU" class="card-img-top" alt="arjun reddy" style="height:250px;">
                 <div class="card-body">
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 25%"></div>
+</div><br>
                   <a href="https://www.imdb.com/title/tt4271820/" class="btn btn-primary">Play</a>
                 </div>
               </div>
               <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcTlu56FTmFZE_X8ZfAQXuyxd8J3PpYVhYdg&usqp=CAU" class="card-img-top" alt="Captain Miller" style="height:250px;">
                 <div class="card-body">
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+</div><br>
                                   <a href="https://www.imdb.com/title/tt22170036/" class="btn btn-primary">Play</a>
 
                 </div>
@@ -177,13 +182,16 @@
               <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XprKusdVzO7o_dn67JPnTBsO9HLNPmA12R7Q44zyFngut0RObs98lqiUF2wrtpg1Bdg&usqp=CAU" class="card-img-top" alt="96" style="height:250px;">
                 <div class="card-body">
+                  <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+</div><br>
                   
                                     <a href="https://www.imdb.com/title/tt7019842/" class="btn btn-primary">Play</a>
                 </div>
               </div>
     
     <div class="Love Movies">
-        <h2 class="text-light">Love Movies</h2>
+        <h2 class="text-light" id="love">Love Movies</h2>
     <div class="row">
     <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem; ">
         <img src="https://m.media-amazon.com/images/S/pv-target-images/e21a6b38670c9d1fb4720f7cd28be13ad8d31a5c600f088bb0bd557176c1b4a5.jpg" class="card-img-top" alt="ok kanmani" style="height:250px;">
@@ -221,7 +229,7 @@
     </div>
 </div>
 <div class="Action Movies">
-    <h2 class="text-light">Action Movies</h2>
+    <h2 class="text-light" id="action">Action Movies</h2>
 <div class="row">
 <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem; ">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIlPmxsvVKZ1vfxLl3JxqL3xh1_UCZk5idw&usqp=CAU" class="card-img-top" alt="Captain Miller" style="height:250px;">
