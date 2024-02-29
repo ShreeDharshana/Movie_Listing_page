@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VTube</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body style="background-color: black;">
+    <!-- navbar -->
+    <header>
+      <nav class="navbar bg-body-tertiary p-0">
+        <div class="container-fluid text-bg-dark p-2">
+          <h3>VTube</h3>
+          <form>
+            <input class="outline-none" type="text" placeholder="Search" />
+            <button class="btn text-light bg-secondary ms-3 rounded-pill">Search</button>
+          </form>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#" aria-current="page"
+                ><i class="fa-solid fa-house"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#"
+                ><i class="fa-solid fa-plus"></i> Watchlist</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                href="#"
+                ><i class="fa-solid fa-list"></i> Categories</a
+              >
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdowm-item text-light bg-dark px-3" href="#">Movies</a></li>
+                <li><a class="dropdowm-item text-light bg-dark px-3" href="#">Series</a></li>
+                <li><a class="dropdowm-item text-light bg-dark px-3" href="#">TV Shows</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BM2Y5Mzg0NGQtODJhMy00ZjcwLTg5OTUtZDU1YmM2MDQ0MTMzXkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_.jpg"
+            class="d-block w-100"
+            alt="kgf-2 image"
+          />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>K.G.F: Chapter 2</h5>
+
+                <ul>
+                    <li class="d-inline">Action > </li>
+                    <li class="d-inline">Suspense > </li>
+                    <li class="d-inline">Drama</li>
+                </ul>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.koimoi.com/wp-content/new-galleries/2022/08/sita-ramam-full-movie-leaked-in-hd-quality-001.jpg"
+            class="d-block w-100"
+            alt="sita ramam image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sita Ramam</h5>
+                <ul>
+                    <li class="d-inline">Romance > </li>
+                    <li class="d-inline">Action > </li>
+                    <li class="d-inline">Drama</li>
+                </ul>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202302/f1eb4c7f5894ff214e19361cc94fe34116ebad1cea2c42617d1b4f8227165366-sixteen_nine.jpg?VersionId=vmO970bgamSIFtHtUFzZkZkMNgMo9wAF&size=690:388"
+            class="d-block w-100"
+            alt="carnival row image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Carnival Row</h5>
+
+                <ul>
+                    <li class="d-inline">Horror > </li>
+                    <li class="d-inline">Crime Fiction > </li>
+                    <li class="d-inline">Mystery</li>
+                </ul>
+
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- card -->
+    <div class="container">
+    <div class="Continue Watching mt-5">
+        <h2 class="text-light">Continue Watching for Shree</h2>
+    <div class="row">
+        <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNAK1GlZUUzTn_E5ff3YPYiBzfdRfZIp6stg&usqp=CAU" class="card-img-top" alt="arjun reddy" style="height:250px;">
+                <div class="card-body">
+                  <a href="https://www.imdb.com/title/tt4271820/" class="btn btn-primary">Play</a>
+                </div>
+              </div>
+              <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcTlu56FTmFZE_X8ZfAQXuyxd8J3PpYVhYdg&usqp=CAU" class="card-img-top" alt="Captain Miller" style="height:250px;">
+                <div class="card-body">
+                                  <a href="https://www.imdb.com/title/tt22170036/" class="btn btn-primary">Play</a>
+
+                </div>
+              </div>
+              <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XprKusdVzO7o_dn67JPnTBsO9HLNPmA12R7Q44zyFngut0RObs98lqiUF2wrtpg1Bdg&usqp=CAU" class="card-img-top" alt="96" style="height:250px;">
+                <div class="card-body">
+                  
+                                    <a href="https://www.imdb.com/title/tt7019842/" class="btn btn-primary">Play</a>
+                </div>
+              </div>
+    
+    <div class="Love Movies">
+        <h2 class="text-light">Love Movies</h2>
+    <div class="row">
+    <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem; ">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/e21a6b38670c9d1fb4720f7cd28be13ad8d31a5c600f088bb0bd557176c1b4a5.jpg" class="card-img-top" alt="ok kanmani" style="height:250px;">
+        <div class="card-body">
+          <h5 class="card-title">OK Kanmani</h5>
+          <p class="card-text">Two young lovers are compatible in every way - they even agree that marriage is futile. However, their emotions are not so easily managed.</p>
+          <a href="https://www.imdb.com/title/tt4271820/" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+      <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+        <img src="https://image.airtel.tv/content/EROSNOW/MOVIE/EROSNOW_MOVIE_6687211/Sanam_Teri_Kasam_1_1.png" class="card-img-top" alt="sanam teri kasam" style="height:250px;">
+        <div class="card-body">
+          <h5 class="card-title">Sanam Teri Kasam</h5>
+          <p class="card-text">After being disowned by her family, an awkward librarian relies on the help of her brooding neighbour.</p>
+          <a href="https://www.imdb.com/title/tt4271820/" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+      <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem; ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNAK1GlZUUzTn_E5ff3YPYiBzfdRfZIp6stg&usqp=CAU" class="card-img-top" alt="arjun reddy" style="height:250px;">
+        <div class="card-body">
+          <h5 class="card-title">Arjun Reddy</h5>
+          <p class="card-text">Arjun Reddy, a short-tempered house surgeon, gets used to drugs and drinks when his girlfriend is forced to marry another person.</p>
+          <a href="https://www.imdb.com/title/tt4271820/" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+      <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/minnale-et00308966-1704694426.jpg" class="card-img-top" alt="minnale" style="height:250px;">
+        <div class="card-body">
+          <h5 class="card-title">Minnale</h5>
+          <p class="card-text">A young girl is torn between an obsessive lover and a mild-mannered suitor.</p>
+          <a href="https://www.imdb.com/title/tt0357905/" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+      
+    </div>
+</div>
+<div class="Action Movies">
+    <h2 class="text-light">Action Movies</h2>
+<div class="row">
+<div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem; ">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIlPmxsvVKZ1vfxLl3JxqL3xh1_UCZk5idw&usqp=CAU" class="card-img-top" alt="Captain Miller" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">Captain Miller</h5>
+              <p class="card-text">A man leaves and turns against the British-led Indian military after witnessing atrocity.</p>
+              <a href="https://www.imdb.com/title/tt22170036/" class="btn btn-primary">Watch Now</a>
+            </div>
+          </div>
+          <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpiAbcCRQKnHHYTBCkqRfoqkXl07jHxMAnh6BueLB7nbRiocSAm1Cmo0D2oME65PGoq8&usqp=CAU" class="card-img-top" alt="Vikram" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">Vikram</h5>
+              <p class="card-text">A special investigator discovers a case of serial killings is not what it seems to be, and leading down this path is only going to end in a war between everyone involved.</p>
+              <a href="https://www.imdb.com/title/tt9179430/" class="btn btn-primary">Watch Now</a>
+            </div>
+          </div>
+          <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DNA4mhxnZuZwaTjHgdH4k16Tn4NzXIbACQ&usqp=CAU" class="card-img-top" alt="War" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">War</h5>
+              <p class="card-text">Indian agent Khalid goes on a mission to hunt and eliminate his former mentor, the country's top agent Kabir who has gone rogue. A deadly war begins.</p>
+              <a href="https://www.imdb.com/title/tt7430722/" class="btn btn-primary">Watch Now</a>
+            </div>
+          </div>
+          <div class="card mx-3 mb-5 mt-1 text-bg-dark" style="width: 18rem;">
+            <img src="https://static.javatpoint.com/movie-reviews/images/major-movie-review.png" class="card-img-top" alt="Major" style="height:250px;">
+            <div class="card-body">
+              <h5 class="card-title">Major</h5>
+              <p class="card-text">Based on the life of Major Sandeep Unnikrishnan, who was martyred in action during the November 2008 Mumbai attacks.</p>
+              <a href="https://www.imdb.com/title/tt9851854/" class="btn btn-primary">Watch Now</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
